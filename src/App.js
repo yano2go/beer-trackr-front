@@ -6,7 +6,7 @@ function App() {
 const url = 'https://beer-trackr2.herokuapp.com/'
 const [beerData, setBeerData] = useState([]);
 useEffect(() => {
-  // if (!query) retu rn;
+  // if (!que ry) retu rn;
 
   const fetchData = async () => {
     
