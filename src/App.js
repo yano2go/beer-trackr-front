@@ -3,10 +3,10 @@ import './App.css';
 import { useState, useEffect } from "react";
 
 function App() {
-const url = 'http://beer-trackr2.herokuapp.com/'
+const url = 'https://beer-trackr2.herokuapp.com/'
 const [beerData, setBeerData] = useState([]);
 useEffect(() => {
-  // if (!query) retu rn;
+  // if (!query) return;
 
   const fetchData = async () => {
     
@@ -22,7 +22,7 @@ const [formInputs, updateFormInputs] = useState({  brand: '', style: '',name: ''
 const handleSubmit  = async (event) =>{
   event.preventDefault()
   try{
-    const response = await fetch('https://beer-trackr2.herokuapp.com/', {
+    const response = await fetch ('https://beer-trackr2.herokuapp.com/beer', {
       body: JSON.stringify(formInputs),
       method: 'POST',
       headers: {
