@@ -3,7 +3,7 @@ import './App.css';
 import { useState, useEffect } from "react";
 
 function App() {
-const url = 'https://beer-trackr2.herokuapp.com/'
+const url = 'https://beer-trackr2.herokuapp.com/beers'
 const [beerData, setBeerData] = useState([]);
 useEffect(() => {
   // if (!query) return;
