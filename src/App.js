@@ -22,7 +22,7 @@ const [formInputs, updateFormInputs] = useState({  brand: '', style: '',name: ''
 const handleSubmit  = async (event) =>{
   event.preventDefault()
   try{
-    const response = await fetch ('https://beer-trackr2.herokuapp.com/beer', {
+    const response = await fetch ('https://beer-trackr2.herokuapp.com/beers', {
       body: JSON.stringify(formInputs),
       method: 'POST',
       headers: {
